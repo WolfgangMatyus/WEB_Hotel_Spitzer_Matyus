@@ -39,16 +39,48 @@
                 <div class="p1">
                     <p>Choose a room below!</p>
                 </div>
-                    
-                
+                    <form action="results.html" method="GET" enctype="multipart/form-data">
+                        <div>
+                            <label for="anrede">Anrede</label>
+                            <input type="text" name="anrede" id="andrede" placeholder="Anrede" required>
+                        </div>
+                        <div>
+                            <label for="vorname">Vorname</label>
+                            <input type="text" name="vorname" id="vorname" placeholder="Vorname" required>
+                        </div>
+                        <div>
+                            <label for="nachname">Nachname</label>
+                            <input type="text" name="nachname" id="nachname" placeholder="Nachname" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username">
+                        </div>
+                        <div>
+                            <label>
+                                Password
+                                <input type="password" name="password" placeholder="Password" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Password
+                                <input type="password" name="password" placeholder="Password" required>
+                            </label>
+                        </div>
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </form>
             </div>
-
             <div class="RightContent">
                 <div class="p1">
                     <p>specials:</p>
                 </div>
             </div>
-
         </div>
 
         <footer>
