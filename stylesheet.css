@@ -4,28 +4,39 @@
     text-align: center;
 }
 
-.header_grid{
+.grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "a a b"
-        "c c c";
+        "a a a b"
+        "c c c c"
+        "d e e f"
+        "g g g g";
     margin: 2rem 0;
 }
 
-header{    
-    grid-area: a;
+header{
+    grid-area: a;    
     text-align: center;
     background-color: rgb(5, 35, 80);
 }
 
-h1 {
+h1.Headline {
     color: white; 
     font-family: Helvetica;
+    display: inline-block;
 }
 
-.medialinks{
+.medialink{
     grid-area: b;
+    background-color: rgb(5, 35, 80);
+    color: white;
+    font-size: small;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
 }
 
 .help_img{
@@ -100,28 +111,23 @@ p {font-size: 20px;}
     text-align: center;
 }
 
-.content_grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "a b c"
-        "c c c";
-    margin: 2rem 0;
-}
-
-div.LeftContent {
+.LeftContent {
     grid-area: d;
     display: inline-block;
 }
 
-div.CenterContent {
-    grid-area: e;
+.CenterContent {
+
     overflow: auto;
     display: inline-block;
 }
 
-#body_pic{
+.body_pic{
+    grid-area: e;
+    display: inline-block;
+}
 
+#body_pic{
     width: 100%;
     height: auto;
 }
@@ -170,19 +176,8 @@ footer {
     /*height: 2.5rem; */
 }
 
-.impressum_link{
-    color: white;
-    background-color: rgb(0, 102, 255);
-    text-align: center;
-    display: inline-block;
-}
-
-.impressum_header{
-
-}
-
 .impressum{
-
+padding: 10px;
 
 }
 
