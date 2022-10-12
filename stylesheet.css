@@ -1,107 +1,93 @@
-header{
-    background-color: rgb(0, 102, 255);
-    font-family:verdana;
-}
-
-.Headline{
-    display: inline-block;
-    padding: 20px 0px 20px 0px;
-}
-
-.Headline_pic{
-    padding-top: 10px;
-    display: inline-block;
-}
-
-body {
-    margin:auto;
-    background-color: rgb(166, 255, 0); 
-    font-family:verdana;
-}
-
-.table{
-    margin: auto;
-}
-
-h1 {
-    color: white; 
-    font-family: Helvetica;
-}
- 
-/* unvisited link */
- a:link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: green;
-    text-decoration: none;
-  }
-  
-  /* selected link */
-  a:active {
-    color: red;
-    text-decoration: none;
-  } 
-
-p {font-size: 20px;}
-
-.p1 { 
+*{
+    box-sizing: border-box;
     text-align: center;
 }
 
-nav {
-    height: 120px;
-    background-color: rgb(0, 102, 255);
-    font-family:verdana;
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+        "a a a b"
+        "c c c c"
+        "d e e f"
+        "g g g g";
+}
+
+.grid section:first-of-type{
+    grid-area: d;
+}
+
+.grid main{
+    grid-area: e;
+}
+
+.grid section:last-of-type{
+    grid-area: f;
+}
+
+header{
+    grid-area: a;    
+    text-align: center;
+    background-color: rgb(5, 35, 80);
+}
+
+h1.Headline {
+    color: white; 
+    font-family: Helvetica;
     display: inline-block;
+}
+
+.medialink{
+    grid-area: b;
+    background-color: rgb(5, 35, 80);
+    color: white;
+    font-size: small;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.help_img{
+    float: right;
+}
+a.help_img{
+    padding: 19px 30px 12px 30px;
+    box-sizing: border-box;
+}
+
+#question_mark_icon_white{
+    width: 30px; 
+    height: 30px;
+    box-sizing: border-box;
+}
+
+nav {
+    grid-area: c;
+    background-color: rgb(0, 102, 255);
 }
 
 .navbar {
     text-align: center;
-    padding-top: 50px;
-    height: 70px;
-    align-content: center;
 }
 
-.navbutton{
-    color: white;
-    width: 30px;
-    height: 20px;
-    padding: 14px 25px;
-    margin: 25px;
-    background-color: orange;
+a.navbutton{
+    padding: 20px 50px 20px 50px;
+    font-size: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+body {
+    margin:auto;
+    background-color: rgb(131, 134, 126); 
     font-family:verdana;
-    border-radius: 5px;
 }
 
-
-#page-container {
-    position: relative;
-    overflow: auto;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
-
-div.LeftContent {
-    width: 25%;
-    display: inline-block;
-}
-
-div.CenterContent {
-    width: 49%;
-    overflow: auto;
-    display: inline-block;
+#body_pic{
+    width: 100%;
+    height: auto;
 }
 
 div.gallerys{
@@ -128,16 +114,15 @@ div.gallery {
   
   div.desc {
     padding: 15px;
-    text-align: center;
+
   }
 
 div.RightContent {
-    width: 25%;
     display: inline-block;
 }
 
 footer {
-    /*height: 90px;*/
+    grid-area: g;
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: rgb(0, 102, 255);
@@ -145,35 +130,61 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /*height: 2.5rem; */
-}
-
-.impressum_link{
-    color: white;
-    background-color: rgb(0, 102, 255);
-    text-align: center;
-    display: inline-block;
-}
-
-.impressum_header{
-    text-align: center;
 }
 
 .impressum{
-    text-align: center;
+padding: 10px;
 
 }
 
 .faq_top{
-    text-align: center;
-    height: 50px;
+height: 50px;
 }
 
 .Question{
     color: white;
-    text-align: center;
     border: 1px solid #777;
     border-color: white;
-    /*display: inline;*/
-    /*border-radius: 20%;*/
+}
+
+/* unvisited link */
+ a:link {  
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    background-color: lightskyblue;
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: red;
+    text-decoration: none;
+  } 
+
+p {font-size: 20px;}
+
+.RightContent{
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+}
+
+.LeftContent{
+    background-color: bisque;
+    height: 100%;
+}
+
+.sidebar_header {
+    font-family: Cambria;
 }

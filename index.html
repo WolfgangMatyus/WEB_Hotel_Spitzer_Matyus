@@ -1,81 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>WEB_HOTEL_SPITZER_MATYUS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <header>
-            <div class="Headline">
-                <h1>BeispielHotel</h1>
-            </div>
-            <div class="Headline_pic">
-                <img src="pics/HEADER-inntalerhof-3947-hotel-sommer_762f4ae754.jpg" width="200" height="100">
+        <div class="grid">
+            <header>
+                <div class="Headline">
+                    <h1 class="Headline">Welcome Home to your SPAHotel</h1>
+                </div>
+            </header>
+            <div class="medialink">
+                <ul>
+                    <li class="medialink"><a>facebook</a></li>
+                    <li><a>youtube</a></li>
+                    <li><a>intergram</a></li>
+                </ul>
+
             </div>
             <nav>
                 <div class="navbar">
                     <a class="navbutton" href="index.html">HOME</a>
-                    <a class="navbutton" href="registration.html">Registration</a>
+                    <a class="navbutton" href="reg.html">Registration</a>
                     <a class="navbutton" href="login.html">Login</a>
                     <a class="navbutton" href="index.html">Roombooking</a>
                     <a class="navbutton" href="faq.html">FAQ</a>
+                    <a class="help_img" href="help.html">
+                        <img id="question_mark_icon_white" src="pics/help_question_mark_icon_white.png" alt="HELP" title="How To?">
+                    </a>
                 </div>
             </nav>
-        </header>
-        <div class="Content">
-            <div class="LeftContent">
-                <div class="p1">
-                    <p>Filter:</p>
-                </div>
-            </div>
-            <div class="CenterContent">
-                <div class="p1">
-                    <p>Choose a room below!</p>
-                </div>
-                    <div class="gallerys">
-                        <div class="gallery">
-                        <!--<a target="_blank" href="img_5terre.jpg">-->
-                          <img src="pics/rooms_slide_1.jpg" alt="Cinque Terre" width="320" height="200">
-                        <!--</a>-->
-                        <div class="desc">room1<br>
-                            Add a description of the image here</div>
-                      </div>
-                      <div class="gallery">
-                        <!--<a target="_blank" href="img_forest.jpg">-->
-                          <img src="pics/rooms_slide_2-320x200.jpg" alt="Forest" width="320" height="200">
-                        <!--</a>-->
-                        <div class="desc">room2<br>
-                            Add a description of the image here</div>
-                      </div>
-                      <div class="gallery">
-                        <!--<a target="_blank" href="img_lights.jpg">-->
-                          <img src="pics/rooms_slide_3-320x200.jpg" alt="Northern Lights" width="320" height="200">
-                        <!--</a>-->
-                        <div class="desc">room3<br>
-                            Add a description of the image here</div>
-                      </div>
-                      
-                      <div class="gallery">
-                        <!--<a target="_blank" href="img_mountains.jpg">-->
-                          <img src="pics/rooms_slide_4-320x200.jpg" alt="Mountains" width="320" height="200">
-                        <!--</a>-->
-                        <div class="desc">room4<br>
-                            Add a description of the image here</div>
-                      </div>
+                <section>
+                    <div class="LeftContent">
+                        <div class="sidebar_header">
+                            <h2>Calender:</h2>
+                        </div>
                     </div>
-            </div>
-            <div class="RightContent">
-                <div class="p1">
-                    <p>specials:</p>
+                </section>
+                <main>
+                    <div class="CenterContent">
+                        <div class="body_pic">
+                            <img id="body_pic" src="pics/HEADER-inntalerhof-3947-hotel-sommer_762f4ae754.jpg">
+                        </div>                            
+                    </div>
+                </main>
+                <section>          
+                    <div class="RightContent">
+                        <div class="sidebar_header">
+                            <h2>Quickcheck:</h2>
+                        </div>
+                    </div>
+                </section>             
+            <footer>
+                <div class="footbar">
+                    <a class="impressum" href="impressum.html">Impressum</a>
                 </div>
-            </div>
-        </div>
-        <footer>
-            <div class="footbar">
-                <a class="impressum" href="impressum.html">Impressum</a>
-            </div>
-        </footer>
-
+            </footer>
+        </div> 
     </body>
-
+    
 </html>
