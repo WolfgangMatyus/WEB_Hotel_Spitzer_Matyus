@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     text-align: center;
+    margin: 0;
 }
 
 .grid{
@@ -35,6 +36,7 @@ h1.Headline {
     color: white; 
     font-family: Helvetica;
     display: inline-block;
+    margin: 20px;
 }
 
 .medialink{

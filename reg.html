@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="stylesheet_reg.css">
     </head>
     <body>
         <div class="grid">
@@ -35,66 +35,150 @@
                 </div>
             </nav>
                 <section>
-                    <div class="LeftContent">
-                        <div class="sidebar_header">
-                            <h2>Calender:</h2>
-                            <p>https://softauthor.com/registration-form-design-in-html-css-with-code/</p>
-                        </div>
-                    </div>
+
                 </section>
                 <main>
                     <div class="CenterContent">
-                        <form action="regResults.html" method="GET" enctype="multipart/form-data">
-                            <div>
-                                Gender
-                                <div>
-                                    <label for="male">male</label>
-                                    <input type="radio" name="gender" id="male">
+                        <form class="signup-form">
+                            <div class="form-header">
+                                <h1>Create Account</h1>
+                            </div>
+                            <div class="form-body">
+                    
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label>First Name</label>
+                                        <input type="text" />
+                                    </div>
+                                        
+                                    <div class="input-group">
+                                        <label>Last Name</label>
+                                        <input type="text" />
+                                    </div>
+                                </div>
                                 
-                                    <label for="female">female</label>
-                                    <input type="radio" name="gender" id="female">
-                                </div> 
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label>Email</label>
+                                        <input type="email" />
+                                    </div>
+                                </div>
+                    
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label>Password</label>
+                                        <input type="password" />
+                                    </div>
+                                        
+                                    <div class="input-group">
+                                        <label>Confirm Password</label>
+                                        <input type="password" />
+                                    </div>
+                                </div>
+                    
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label>Gender</label>
+                                        <div class="radio-group">
+                                            <div>
+                                                <label>
+                                                    <input type="radio" name="gender" />
+                                                    Female
+                                                </label>
+                                            </div>
+                    
+                                            <div>
+                                                <label>
+                                                    <input type="radio" name="gender"/>
+                                                    Male
+                                                </label>
+                                            </div>
+                    
+                                            <div>
+                                                <label>
+                                                    <input type="radio" name="gender"/>
+                                                    Other
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="input-group">
+                                        <label>Preferences</label>
+                                        <div class="checkbox-groups">
+                                            <div class="checkbox-group">
+                                                <div>
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        Balcony
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        Shower
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        Bath
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox-group">
+                                                <div>
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        Silent
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        Montainview
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label>
+                                                        <input type="checkbox" />
+                                                        Xtra large Bed
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label>Upload Profile Picture</label>
+                                        <input type="file" />
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Age</label>
+                                        <input type="number" min="0" />
+                                    </div>
+                               </div>
+                    
+                               <div class="row">
+                                    <div class="input-group">
+                                        <label>Comment</label>
+                                        <textarea></textarea>
+                                    </div>
+                               </div>
                             </div>
-                            <div>
-                                <label for="name">Name:</label>
-                                <br>
-                                <input type="text" name="name" id="name" placeholder="Name" required>
+                    
+                            <div class="form-footer">
+                                <button class="btn">
+                                    Create
+                                </button>
                             </div>
-                            <div>
-                                <label for="email">Email:</label>
-                                <br>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                            <div>
-                                <label for="username">Username:</label>
-                                <br>
-                                <input type="text" name="username" id="username">
-                            </div>
-                            <div>
-                                <label>
-                                    Password:
-                                    <br>
-                                    <input type="password" name="password" placeholder="Password" required>
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    Password bestätigen:
-                                    <br>
-                                    <input type="password" name="password" placeholder="Password" required>
-                                </label>
-                            </div>
-                            <button type="reset">Reset</button>
-                            <button type="submit">Submit</button>
                         </form>
                     </div>
                 </main>
                 <section>          
-                    <div class="RightContent">
-                        <div class="sidebar_header">
-                            <h2>Quickcheck:</h2>
-                        </div>
-                    </div>
+
                 </section> 
             
             <footer>
